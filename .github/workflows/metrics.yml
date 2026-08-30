@@ -1,0 +1,19 @@
+name: Terminal Profile Metrics
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+jobs:
+  github-metrics:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Terminal Profile Update
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          user: Lohrenn
+          template: terminal
+          base: header, activity, community, repositories
+          plugin_languages: yes
+          plugin_languages_details: bytes-size, percentage
