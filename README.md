@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:FF0080,50:7928CA,100:00D9FF&height=280&section=header&text=Hello,%20I'm%20Your%20Name&fontSize=60&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Developer%20%C2%B7%20Video%20Producer%20%C2%B7%20Bilingual%20Brand%20Builder&descAlignY=58&descSize=20" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:FF0080,50:7928CA,100:00D9FF&height=280&section=header&text=Hello,%20I'm%20Lohrenn&fontSize=60&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Developer%20%C2%B7%20Video%20Producer%20%C2%B7%20Bilingual%20Brand%20Builder&descAlignY=58&descSize=20" width="100%" />
 
 <a href="https://github.com/Lohrenn">
   <img src="https://readme-typing-svg.demolab.com/?lines=Building+things+that+look+as+good+as+they+work;Full-Stack+Developer+%F0%9F%92%BB;Video+%26+Motion+Production+%F0%9F%8E%AC;Bilingual+EN+%2F+FR+%F0%9F%87%A8%F0%9F%87%A6+%F0%9F%87%AB%F0%9F%87%B7;Brand+Systems+%2B+Code+%2B+Story&font=Fira%20Code&center=true&width=700&height=50&color=F72585&vCenter=true&size=24&pause=1500" alt="Typing SVG" />
