@@ -1,4 +1,13 @@
 <div align="center">
+
+```
+ ________________________________________________________________________________________
+/                                                                                        \
+|   [LOHRENN_DIANKINDI] :: TERMINAL_KERNEL_v4.2.0-RELEASE (x86_64-enterprise-linux)          |
+|   SYSTEM_STATUS: ONLINE || ADVISORY_CORE: ACTIVE || DATA_PIPELINE: SYNCHRONIZED       |
+\________________________________________________________________________________________/
+```
+
 </div>
 
 ```bash
@@ -16,7 +25,13 @@ $ systemctl status lohrenn-core.service
 [LOG_STREAM] Initializing enterprise environment...
 [LOG_STREAM] Loading modules: Pandas, MySQL_Connector, PowerQuery_Engine, PWA_Core
 [LOG_STREAM] Security constraints enforced. Audit trail locked.
+```
 
+---
+
+### 💻 SYSTEM_ARCHITECTURE & CAPABILITIES
+
+```typescript
 type ExecutiveProfile = {
   identity: {
     name: "Lohrenn Diankindi";
@@ -41,13 +56,37 @@ type ExecutiveProfile = {
     }
   ];
 };
+```
 
+---
+
+### 📈 LIVE KERNEL METRICS
+
+<div align="center">
+
+<img src="https://github-readme-stats.vercel.app/api?username=Lohrenn&show_icons=true&theme=dark&include_all_commits=true&count_private=true&hide_border=true&bg_color=0D1117&title_color=58A6FF&icon_color=58A6FF&text_color=C9D1D9" width="49%" />
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Lohrenn&layout=compact&theme=dark&hide_border=true&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9" width="48%" />
+
+</div>
+
+---
+
+### ⚡ EXECUTE COMMANDS
+
+```bash
 $ query-contact --channel=linkedin
 > Output: [https://www.linkedin.com/in/luce-emmanuelle-diankindi-17961b2b6/](https://www.linkedin.com/in/luce-emmanuelle-diankindi-17961b2b6/)
 
-$echo$PHILOSOPHY
+$ echo $PHILOSOPHY
 > "Transforming complex operational & financial data into structured, production-grade intelligence."
+```
 
+<div align="center">
+
+```
 ========================================================================================
                       [ END OF TRANSMISSION // TERMINAL IDLE ]
 ========================================================================================
+```
+
+</div>
