@@ -1,92 +1,62 @@
 <div align="center">
 
-```
- ________________________________________________________________________________________
-/                                                                                        \
-|   [LOHRENN_DIANKINDI] :: TERMINAL_KERNEL_v4.2.0-RELEASE (x86_64-enterprise-linux)          |
-|   SYSTEM_STATUS: ONLINE || ADVISORY_CORE: ACTIVE || DATA_PIPELINE: SYNCHRONIZED       |
-\________________________________________________________________________________________/
-```
+# Lohrenn Diankindi
+### Principal Strategic Advisor & Corporate Finance Specialist
+
+<!-- Dynamic Tech Stack Badges -->
+[![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
+[![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)](https://mysql.com)
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://typescriptlang.org)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org)
+[![Power Query](https://img.shields.io/badge/Microsoft_Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white)](https://office.com)
+
+<!-- Social Badges -->
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/luce-emmanuelle-diankindi-17961b2b6/)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:lohrenn701@gmail.com)
 
 </div>
 
-```bash
-$ systemctl status lohrenn-core.service
-● lohrenn-core.service - Strategic Finance & Enterprise Data Engine
-     Loaded: loaded (/etc/systemd/system/lohrenn-core.service; enabled; vendor preset: enabled)
-     Active: active (running) since Boot
-   Main PID: 1024 (python3)
-      Tasks: 8 (limit: 4915)
-     Memory: 64.0M
-     CGroup: /system.slice/lohrenn-core.service
-             ├─1024 python3 -m core.analytics --mode=financial_reconciliation
-             └─1025 mysqld --defaults-file=/etc/mysql/my.cnf
+---
 
-[LOG_STREAM] Initializing enterprise environment...
-[LOG_STREAM] Loading modules: Pandas, MySQL_Connector, PowerQuery_Engine, PWA_Core
-[LOG_STREAM] Security constraints enforced. Audit trail locked.
-```
+### 📈 Live GitHub Metrics
+
+<div align="center">
+
+<img src="https://github-readme-stats.vercel.app/api?username=Lohrenn&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true" width="49%" />
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Lohrenn&layout=compact&theme=tokyonight&hide_border=true" width="48%" />
+
+</div>
 
 ---
 
-### 💻 SYSTEM_ARCHITECTURE & CAPABILITIES
+### 🐍 Contribution Activity Graph
+
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/Lohrenn/Lohrenn/output/github-contribution-grid-snake.svg" alt="Snake Animation" />
+
+</div>
+
+---
+
+### 💻 Enterprise Systems & Core Stack
 
 ```typescript
-type ExecutiveProfile = {
-  identity: {
-    name: "Lohrenn Diankindi";
-    role: "Principal Strategic Advisor & Corporate Finance Specialist";
-    focus: "Financial Modeling | ETL Automation | Enterprise Systems";
-  };
-  technicalStack: {
-    languages: ["Python 3.11+", "SQL (MySQL)", "TypeScript/JavaScript", "HTML5/CSS3"];
-    dataEng: ["Pandas", "Power Query", "Relational Database Design", "Dynamic Modeling"];
-    tooling: ["VS Code Containers", "Git/GitHub Actions", "PWA Architecture", "Linux CLI"];
-  };
-  flagshipSystems: [
-    {
-      name: "Automated Financial Reconciliation Engine";
-      impact: "Eliminated audit variance; 80%+ execution time reduction";
-      stack: ["Python", "Power Query", "Excel Connections"];
-    },
-    {
-      name: "Relational MySQL Data Warehouse";
-      impact: "Normalized schemas with strict data constraints & query speedup";
-      stack: ["MySQL", "Linux Containers", "SQL"];
-    }
-  ];
+const LohrennNkindi = {
+  role: "Principal Strategic Advisor",
+  coreFocus: ["Corporate Finance", "ETL Pipelines", "Data Governance"],
+  primaryStack: {
+    languages: ["Python", "SQL", "JavaScript"],
+    tools: ["MySQL", "Power Query", "VS Code Containers", "Git"],
+    frameworks: ["PWA Architecture", "GitHub Actions CI/CD"]
+  }
 };
-```
 
 ---
 
-### 📈 LIVE KERNEL METRICS
-
-<div align="center">
-
-<img src="https://github-readme-stats.vercel.app/api?username=Lohrenn&show_icons=true&theme=dark&include_all_commits=true&count_private=true&hide_border=true&bg_color=0D1117&title_color=58A6FF&icon_color=58A6FF&text_color=C9D1D9" width="49%" />
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Lohrenn&layout=compact&theme=dark&hide_border=true&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9" width="48%" />
-
-</div>
-
----
-
-### ⚡ EXECUTE COMMANDS
-
-```bash
-$ query-contact --channel=linkedin
-> Output: [https://www.linkedin.com/in/luce-emmanuelle-diankindi-17961b2b6/](https://www.linkedin.com/in/luce-emmanuelle-diankindi-17961b2b6/)
-
-$ echo $PHILOSOPHY
-> "Transforming complex operational & financial data into structured, production-grade intelligence."
-```
-
-<div align="center">
-
-```
-========================================================================================
-                      [ END OF TRANSMISSION // TERMINAL IDLE ]
-========================================================================================
-```
-
-</div>
+### How to use the Generator Tool directly:
+If you prefer to design the layout visually like in your screenshot:
+1. Go to **`profile-readme-generator.com`** (created by Mauro de Souza).
+2. Select badges, widgets, and social links from the sidebar menu on the right.
+3. Click the green **Generate README** button at the bottom.
+4. Copy the code and paste it into your `lohrenn/README.md` file.
