@@ -86,9 +86,8 @@
 ## 🔥 Contribution Activity
 
 <div align="center"> 
-  <img src="https://raw.githubusercontent.com/Lohrenn/Lohrenn/main/assets/activity-charts.png?v=1" width="100%" /> </div>
-
-Built from scratch from real GitHub data — a 7-day rolling trend, daily contribution volume, and a breakdown of contribution types across the full year. Regenerates daily, with no dependency on a third-party widget service.
+  <img src="https://raw.githubusercontent.com/Lohrenn/Lohrenn/main/assets/activity-charts.png?v=1" width="100%" /> 
+</div>
 
 <br/>
 
