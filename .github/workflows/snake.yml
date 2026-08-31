@@ -1,31 +1,37 @@
-name: Generate Snake Animation
+name: Generate Growing Snake
 
 on:
   schedule:
-    - cron: "0 0 * * *"   # runs daily at midnight UTC
+    - cron: "0 0 * * *"   # regenerates daily at midnight UTC
   workflow_dispatch: {}    # lets you trigger it manually from the Actions tab
-  push:
-    branches:
-      - main
 
 jobs:
-  generate:
+  build:
+    runs-on: ubuntu-latest
     permissions:
       contents: write
-    runs-on: ubuntu-latest
     steps:
-      - name: Generate the snake SVGs
-        uses: Platane/snk@v3
-        with:
-          github_user_name: ${{ github.repository_owner }}
-          outputs: |
-            dist/snake-dark.svg?palette=github-dark
-            dist/snake.svg
+      - name: Checkout repo
+        uses: actions/checkout@v4
 
-      - name: Push generated files to the `output` branch
-        uses: crazy-max/ghaction-github-pages@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
-          target_branch: output
-          build_dir: dist
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install requests pillow
+
+      - name: Generate the growing snake GIF
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_USERNAME: ${{ github.repository_owner }}
+        run: python3 scripts/growing_snake.py
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add assets/growing-snake.gif
+          git diff --cached --quiet || git commit -m "Update growing snake animation"
+          git push
