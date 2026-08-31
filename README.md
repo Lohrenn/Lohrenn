@@ -146,7 +146,7 @@ Data automation pipelines built with Python and MySQL for financial reconciliati
 
 <div align="center">
 
-<a href="https://linkedin.com/in/https://www.linkedin.com/in/luce-emmanuelle-diankindi-17961b2b6/">
+<a href="https://www.linkedin.com/in/luce-emmanuelle-diankindi-17961b2b6/">
 <img src="https://img.shields.io/badge/-LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
 
 
