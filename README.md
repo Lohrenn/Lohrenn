@@ -85,9 +85,10 @@
 
 ## 🔥 Contribution Activity
 
-<div align="center">
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=Lohrenn&theme=tokyo-night&hide_border=true&bg_color=0D1117&color=00D9FF&line=2C5364&point=ffffff" width="100%" />
-</div>
+<div align="center"> 
+  <img src="https://raw.githubusercontent.com/Lohrenn/Lohrenn/main/assets/activity-charts.png?v=1" width="100%" /> </div>
+
+Built from scratch from real GitHub data — a 7-day rolling trend, daily contribution volume, and a breakdown of contribution types across the full year. Regenerates daily, with no dependency on a third-party widget service.
 
 <br/>
 
