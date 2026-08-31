@@ -1,0 +1,58 @@
+name: Update Membership Duration Badge
+
+on:
+  schedule:
+    - cron: "0 0 * * *"   # recalculates daily at midnight UTC
+  workflow_dispatch: {}    # lets you trigger it manually from the Actions tab
+
+jobs:
+  update-badge:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Compute membership duration
+        run: |
+          python3 <<'EOF'
+          from datetime import datetime, timezone
+          import json, os
+
+          # GitHub account creation date (fixed — update only if this ever changes)
+          created = datetime(2025, 8, 5, tzinfo=timezone.utc)
+          now = datetime.now(timezone.utc)
+
+          years = now.year - created.year
+          months = now.month - created.month
+          if now.day < created.day:
+              months -= 1
+          if months < 0:
+              years -= 1
+              months += 12
+
+          parts = []
+          if years > 0:
+              parts.append(f"{years} year" + ("s" if years != 1 else ""))
+          if months > 0:
+              parts.append(f"{months} month" + ("s" if months != 1 else ""))
+          message = " ".join(parts) if parts else "New member"
+
+          os.makedirs("data", exist_ok=True)
+          with open("data/member-duration.json", "w") as f:
+              json.dump({
+                  "schemaVersion": 1,
+                  "label": "Member For",
+                  "message": message,
+                  "color": "2C5364"
+              }, f)
+          EOF
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/member-duration.json
+          git diff --cached --quiet || git commit -m "Update membership duration badge"
+          git push
