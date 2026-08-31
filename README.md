@@ -8,7 +8,8 @@
 
 <br/>
 
-<img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2FLohrenn&label=Public%20Repos&query=%24.public_repos&color=00D9FF&style=for-the-badge" alt="public repos"/> <img src="https://img.shields.io/badge/-Member%20Since%202025-2C5364?style=for-the-badge&logoColor=white" alt="member since 2025"/> </div> <br/>
+<img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2FLohrenn&label=Public%20Repos&query=%24.public_repos&color=00D9FF&style=for-the-badge" alt="public repos"/> 
+<img src="https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/Lohrenn/Lohrenn/main/data/member-duration.json&style=for-the-badge" alt="member duration"/> </div> <br/>
 
 </div>
 
