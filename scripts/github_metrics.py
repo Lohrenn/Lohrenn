@@ -1,14 +1,3 @@
-"""
-Generates a self-built GitHub metrics panel: contribution stats and streaks,
-a top-languages breakdown by real code volume, and a tiered achievement
-system based on real thresholds — replacing three separate third-party
-widgets (readme-stats, top-langs, trophy) that depend on someone else's
-free server staying online.
-
-Requires: requests, matplotlib
-Env vars: GH_TOKEN (a token with read access), GH_USERNAME
-"""
-
 import os
 from datetime import datetime, timedelta, timezone
 
