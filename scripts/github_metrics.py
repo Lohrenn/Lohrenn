@@ -167,11 +167,9 @@ def main():
     fig.patch.set_facecolor(BG)
 
     fig.text(0.045, 0.955, "GitHub Metrics", fontsize=22, fontweight="bold", color=TEXT)
-    fig.text(0.045, 0.915, "Computed directly from the GitHub API — no third-party widget dependency.",
-              fontsize=11.5, color=SUBTEXT, style="italic")
 
     # Row 1: three stat callouts
-    stat_y = 0.72
+    stat_y = 0.78
     stats = [
         (str(total_contributions), "Total Contributions", "Past 12 months"),
         (str(current_streak), "Current Streak", "days"),
@@ -183,8 +181,8 @@ def main():
         fig.text(x, stat_y - 0.055, label, fontsize=11, color=TEXT, ha="center")
         fig.text(x, stat_y - 0.09, sub, fontsize=9, color=SUBTEXT, ha="center", style="italic")
 
-    fig.add_artist(plt.Line2D([0.36, 0.36], [0.6, 0.8], color=GRID, linewidth=1, transform=fig.transFigure))
-    fig.add_artist(plt.Line2D([0.62, 0.62], [0.6, 0.8], color=GRID, linewidth=1, transform=fig.transFigure))
+    fig.add_artist(plt.Line2D([0.36, 0.36], [0.68, 0.88], color=GRID, linewidth=1, transform=fig.transFigure))
+    fig.add_artist(plt.Line2D([0.62, 0.62], [0.68, 0.88], color=GRID, linewidth=1, transform=fig.transFigure))
     fig.add_artist(plt.Line2D([0.045, 0.955], [0.585, 0.585], color=GRID, linewidth=1, transform=fig.transFigure))
 
     # Row 2 left: top languages horizontal bar
@@ -233,3 +231,11 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+
+
+
+
+
+
