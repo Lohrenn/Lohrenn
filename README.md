@@ -76,11 +76,6 @@
 <img src="https://raw.githubusercontent.com/Lohrenn/Lohrenn/main/assets/github-metrics.png?v=1" width="100%"/>
 </div>
 
-<img src="https://github-readme-stats.vercel.app/api?username=Lohrenn&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00D9FF&icon_color=2C5364&text_color=c9d1d9&count_private=true" width="49%" />
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=Lohrenn&theme=tokyonight&hide_border=true&background=0D1117&stroke=00D9FF&ring=2C5364&fire=00D9FF&currStreakLabel=00D9FF" width="49%" />
-
-</div>
-
 <br/>
 
 ## 🔥 Contribution Activity
