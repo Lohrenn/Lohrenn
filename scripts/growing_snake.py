@@ -1,9 +1,11 @@
 """
 Generates a GitHub-contribution "growing snake" animation.
 
-Unlike the standard eating-snake tools, the snake here genuinely gets longer
-every time it passes over a day with real contributions, and stays the same
+Unlike the standard eating-snake tools, the snake here genuinely gets longer every time it passes over a day with real contributions, and stays the same
 length when it passes over an empty day — exactly like the classic Snake game.
+
+The date window is anchored to today's date (midnight UTC) rather than the exact current time, matching activity_charts.py and github_metrics.py, so
+all three scripts - which run independently but on the same daily schedule always compute the identical 365-day window.
 
 Requires: requests, pillow
 Env vars: GH_TOKEN (a token with read access), GH_USERNAME
@@ -29,6 +31,12 @@ TAIL_COLOR = (247, 37, 133)    # #F72585 — brand pink
 FRAME_DURATION_MS = 55
 END_HOLD_FRAMES = 20           # extra frames pausing on the final, longest state
 
+
+def today_utc_midnight():
+    """Floor to the start of today (UTC) - see activity _charts.py for why."""
+    now = datetime.now(timezone.utc)
+    return now.replace(hour=0, minute=0, second=0, microsecond=0)
+    
 
 def fetch_contribution_calendar():
     query = """
