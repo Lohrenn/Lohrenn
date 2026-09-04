@@ -1,3 +1,16 @@
+"""
+Generates a self-built GitHub metrics panel: contribution stats and streaks, a top-languages breakdown by real code volume, and a tiered achievement
+system based on real thresholds - replacing three separate third-party widgets (readme-stats, top-langs, throphy) that depend on someone else's
+free server staying online.
+
+The date window is anchored to today's date (midnight UTC) rather than the exact current time, so this script and activity_charts.py/growing_snake.py -
+which run separately but on the same daily schedule - always computer the identical 365-day window and therefore always report the identical total, 
+even though they fetch independently.
+
+Requires: requests, matplotlib
+Env vars: GH_TOKEN (a token with read access), GH_USERNAME
+"""
+
 import os
 from datetime import datetime, timedelta, timezone
 
@@ -24,6 +37,12 @@ SILVER = "#B8B8B8"
 
 plt.rcParams["font.family"] = "DejaVu Serif"
 
+
+def today_utc_midnight():
+    """Floor to the start of today (UTC) - see activity_charts.py for why."""
+    now =datetime.now(timezone.utc)
+    return now.replace(hour=0, minute=0, second=0, microsecond=0)
+    
 
 def gql(query, variables):
     resp = requests.post(
