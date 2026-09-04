@@ -1,6 +1,7 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0F2027,50:2C5364,100:00D9FF&height=260&section=header&text=Lohrenn%20Diankindi&fontSize=55&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Data%20Strategist%20%26%20Full-Stack%20Dashboard%20Designer&descAlignY=58&descSize=17" width="100%" />
+<img src="https://raw.githubusercontent.com/Lohrenn/Lohrenn/main/assets/header-banner.svg" width="100%"/> 
+
 
 <a href="https://github.com/Lohrenn">
   <img src="https://readme-typing-svg.demolab.com/?lines=Turning+financial+complexity+into+strategic+clarity;Building+executive+KPI+%26+capital+dashboards;Data+Strategist+%7C+Python+%C2%B7+SQL+%C2%B7+React;Bilingual+FR+%2F+EN+%F0%9F%87%A8%F0%9F%87%A6+%F0%9F%87%AB%F0%9F%87%B7&font=Fira%20Code&center=true&width=750&height=50&color=00D9FF&vCenter=true&size=22&pause=1600" alt="Typing SVG" />
