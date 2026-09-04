@@ -3,6 +3,12 @@ Generates a full-year GitHub contribution activity panel in an editorial,
 data-journalism style (muted tones, serif type, annotated peaks, a real
 headline and source line) rather than a glossy neon dashboard look.
 
+The date window is anchored to today's date (midnight UTC) rather than the 
+exact current time, so this script and github_metrics.py/growing_snake.py -
+which run separately but on the same daily schedule - always compute the
+identical 365-day window and therefore always report the identical total,
+even though they fetch independently.
+
 Requires: requests, matplotlib
 Env vars: GH_TOKEN (a token with read access), GH_USERNAME
 """
@@ -33,9 +39,19 @@ SAGE = "#7FA084"
 plt.rcParams["font.family"] = "DejaVu Serif"
 
 
-def fetch_year_of_contributions():
+def today_utc_midnight():
+    """Floor to the start of today (UTC). Using the date instead of the exact
+    run time means every script that calls this on the same calendar day 
+    computers an identical window, regardless of the minute each one happens to execute."""
     now = datetime.now(timezone.utc)
-    start = now - timedelta(days=365)
+    return now.replace(hour=0, minute=0, second=0, microsecond=0)
+
+
+    
+def fetch_year_of_contributions():
+    anchor = today_utc_midnight()
+    start = anchor - timedelta (days=365)
+    
 
     query = """
     query($login: String!, $from: DateTime!, $to: DateTime!) {
@@ -60,7 +76,7 @@ def fetch_year_of_contributions():
     variables = {
         "login": GH_USERNAME,
         "from": start.strftime("%Y-%m-%dT%H:%M:%SZ"),
-        "to": now.strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "to": anchor .strftime("%Y-%m-%dT%H:%M:%SZ"),
     }
     resp = requests.post(
         "https://api.github.com/graphql",
