@@ -1,12 +1,9 @@
 """
-Generates a full-year GitHub contribution activity panel in an editorial,
-data-journalism style (muted tones, serif type, annotated peaks, a real
+Generates a full-year GitHub contribution activity panel in an editorial, data-journalism style (muted tones, serif type, annotated peaks, a real
 headline and source line) rather than a glossy neon dashboard look.
 
-The date window is anchored to today's date (midnight UTC) rather than the 
-exact current time, so this script and github_metrics.py/growing_snake.py -
-which run separately but on the same daily schedule - always compute the
-identical 365-day window and therefore always report the identical total,
+The date window is anchored to today's date (midnight UTC) rather than the exact current time, so this script and github_metrics.py/growing_snake.py -
+which run separately but on the same daily schedule - always compute the identical 365-day window and therefore always report the identical total,
 even though they fetch independently.
 
 Requires: requests, matplotlib
