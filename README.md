@@ -1,7 +1,5 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/Lohrenn/Lohrenn/main/assets/header-banner.svg" width="100%"/> 
-
 
 <a href="https://github.com/Lohrenn">
   <img src="https://readme-typing-svg.demolab.com/?lines=Turning+financial+complexity+into+strategic+clarity;Building+executive+KPI+%26+capital+dashboards;Data+Strategist+%7C+Python+%C2%B7+SQL+%C2%B7+React;Bilingual+FR+%2F+EN+%F0%9F%87%A8%F0%9F%87%A6+%F0%9F%87%AB%F0%9F%87%B7&font=Fira%20Code&center=true&width=750&height=50&color=00D9FF&vCenter=true&size=22&pause=1600" alt="Typing SVG" />
